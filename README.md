@@ -21,11 +21,11 @@ official documentations:
   * [stress testing](https://k6.io/docs/test-types/stress-testing/)
   * [soak testing](https://k6.io/docs/test-types/soak-testing/) 
 
-* run on the terminal with
+* run the command on terminal
 ```
 k6 run filename.js
 ```
-if you've created a k6 account you can see the aggregated test results on [app.k6.io](https://app.k6.io/) with the command:
+if you've created a k6 account, you can see the aggregated test results on [app.k6.io](https://app.k6.io/) with the command:
 ```
 k6 run -o cloud filename.js
 ```
