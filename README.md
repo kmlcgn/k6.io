@@ -1,5 +1,3 @@
-## k6.io
-
 ## Installation
 ### Windows
 To install with Package Manager:
