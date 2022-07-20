@@ -29,7 +29,6 @@ if you've created a k6 account, you can see the aggregated test results on [app.
 ```
 k6 run -o cloud filename.js
 ```
-
 ## Results
 Results of 10 successive tests (total of 20) for both clean and noisy versions.</br>
 Results show that average respond time is 3061 ms for the clean sound file while it's 5145 ms for the noisy sound file.
