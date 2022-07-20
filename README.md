@@ -38,7 +38,7 @@ Results show that average respond time is 3061 ms for the clean sound file while
 
 <img width="524" alt="app_results_50VUS" src="https://user-images.githubusercontent.com/47904355/179936922-420d1108-9c49-4284-aaac-46cd5a3c4284.png">
 
-Also, the full terminal output can be seen below for both clean and noisy sound files.
+Also, an example of full terminal output can be seen below for both clean and noisy sound files.
 
 Clean sound file, 100 VUs:</br>
 <img width="700" alt="clean_100VUS" src="https://user-images.githubusercontent.com/47904355/179937978-968413a1-63d4-4541-a499-a3911299e860.png">
