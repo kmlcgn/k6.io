@@ -7,11 +7,17 @@ export let options = {
     http_req_failed: ['rate<0.01'], // http errors should be less than 1%
     http_req_duration: ['p(50)<20000'], // 95% of requests should be below 200ms
   },
-  stages: [
-  { duration: '5s', target: 50 }, // ramp up 50 VUs in 5 sec
-  { duration: '5s', target: 50 }, // stay in the same state 5 sec
-  { duration: '5s', target: 0 }, // scale down to 0. Recovery stage.
-]};
+stages: [
+    { duration: '2m', target: 100 }, // below normal load
+    { duration: '5m', target: 100 },
+    { duration: '2m', target: 200 }, // normal load
+    { duration: '5m', target: 200 },
+    { duration: '2m', target: 300 }, // around the breaking point
+    { duration: '5m', target: 300 },
+    { duration: '2m', target: 400 }, // beyond the breaking point
+    { duration: '5m', target: 400 },
+    { duration: '10m', target: 0 }, // scale down. Recovery stage.
+  ],};
 
 const Request = Symbol.for("request");
 postman[Symbol.for("initial")]({
